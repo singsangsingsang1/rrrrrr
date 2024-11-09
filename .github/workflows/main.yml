@@ -1,1 +1,16 @@
+name: oooooo
 
+on: 
+  workflow_dispatch:
+    inputs:
+      jjjjjj:
+        required: true
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: startinng
+      run: ./main.py ${{ github.event.inputs.jjjjjj }}
